@@ -1,9 +1,11 @@
 import './App.css';
 
+import SearchMovies from "./searchMovies.js"
+
 function App() {
   return (
     <div className="App">
-      <p>asdf</p>
+      <SearchMovies/>
     </div>
   );
 }
