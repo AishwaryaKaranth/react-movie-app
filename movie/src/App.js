@@ -1,12 +1,24 @@
 import './App.css';
-
+import {
+  ThemeProvider,
+  theme,
+  ColorModeProvider,
+  CSSReset,
+} from "@chakra-ui/core";
 import SearchMovies from "./searchMovies.js"
+import Toggle from './Toggle';
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <ThemeProvider theme={theme}>
+      <ColorModeProvider>
+        <CSSReset />
+        <Toggle/>
+      </ColorModeProvider>
+    </ThemeProvider>
       <SearchMovies/>
-    </div>
+    </>
   );
 }
 
